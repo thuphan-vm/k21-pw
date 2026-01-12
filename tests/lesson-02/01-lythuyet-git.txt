@@ -1,0 +1,14 @@
+Lý thuyết lesson 2 
+Giải thích các câu lệnh git:
+
+- git init
+khởi tạo repo Local, bật chế độ được quản lý bởi git cho thư mục hiện tại, files được đưa vào vùng Working Directory
+
+- git add <file_name>
+đưa filename (từ vùng Working Directory) vào vùng Staging (chuẩn bị commit)
+
+- git add .
+đưa tất cả các file(s) có thay đổi/ tạo mới vào vùng Staging (chuẩn bị commit)
+
+- git commit -m "message"
+đưa file(s) (từ vùng Staging) vào vùng Repository -> có thể được push vào branch
