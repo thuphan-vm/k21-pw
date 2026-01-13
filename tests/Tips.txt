@@ -1,0 +1,70 @@
+Lisa's notes
+Git hub: b2b, cty dung he sinh thai Microsoft
+Git lad: tech, dễ cấu hình, b2c (ra doi sau git hub)
+
+Ctrl C: hủy lệnh trong Visual Studio
+nhan "q" de thoat khoi giao dien git log
+
+Excalidraw dung de ve present
+
+git config --global --unset user.name
+git config --global --unset user.email 
+
+git log -> check username, email, commit date + message 
+
+touch tenfilecreate.txt -> tao file trong cmd git
+
+esc -> thoát chat box AI
+
+chuyển path / thành \
+File -> Preference -> go copy -> 2 auto chuyển thành \ 
+
+
+forward slash /
+back slash \
+
+mv  = move
+move destination 
+
+
+// Window Ctrl + / 
+// Mac: Cmd  + /
+comment 
+
+2 variable special:
+Infinity
+NaN
+
+
+Auto save setting: File -> Auto Save
+
+lần dau tien commit phai co message: init project
+
+git restore --staged . 
+git restore --staged filename
+-> lan dau chay lenh nay thi truoc do phai co git commit
+
+
+let/ const
+const = hang số = ko thay doi duoc => thay doi => bao loi
+let = bien = thay doi duoc
+// luon luon dung const, chi dung let khi co chủ đích
+let d = 5;
+d = 10;
+d = 100;
+d = 200;
+
+const PI = 3.14
+
+let PI = 3.14
+PI = 3.15
+
+
+code Legacy: code cũ của ai đó làm trước r
+
+format code: Alt Shift F
+
+trong terminal: nhấn mũi tên lên -> hiển thị dòng lệnh đã gõ trước đó
+
+
+
