@@ -1,0 +1,5 @@
+1. Explaination
+git commit --amend: 
+git commit --amend -m”<message>”: change message of latest commit
+git restore --staged <file>: transfer files in staging area to working directory area
+git reset HEAD~1: transfer files in repository area to working directory area (undo 1 commit)
