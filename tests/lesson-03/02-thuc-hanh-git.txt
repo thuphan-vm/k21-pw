@@ -16,7 +16,7 @@ Staging Area:
 Repository:
 
 c. Chạy lệnh: git commit -m”init project”
-(can't commit -> no message)
+(can't commit -> nothing changed)
 Local: 
 Working Directory: file1, file2, file3
 Staging Area: 

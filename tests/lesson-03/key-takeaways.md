@@ -76,20 +76,25 @@ console.log("Toi ten la" + name + " ");
                 “year”: 2025
         } 
     ```
-        - Khi dùng const (hằng số), thì giá trị sẽ không thay đổi được. Ví dụ:
+- Như ta đã biết, khi dùng const (hằng số), thì giá trị sẽ không thay đổi được. Ví dụ:
+    ``` typescript
         const a = 10;
         a = 15; // lỗi
-        Đối với object cũng vậy, nếu thay cả object bằng một object mới, cũng sẽ gặp lỗi. Ví
-        dụ:
-        const student = {“name”: “lisa”, “age”: 20}
-        student = {“name”: “Kathy”, “age”: 18} // lỗi
-        Nhưng, nếu chỉ thay đổi các thuộc tính của object thì hoàn toàn hợp lệ. Ví dụ,
-        chỉ thay giá trị của name trong object student:
-        const student = {“name”: “lisa”, “age”: 20}
-        student.name = “Kathy”; // Hợp lệ
-- Để thêm thuộc tính mới vào object, chúng ta chỉ cần dùng dấu . hoặc ngoặc vuông [] để định
-nghĩa thuộc tính mới. 
-Ví dụ:
+    ```
+    Đối với object cũng vậy, nếu bạn thay cả object bằng một object mới, bạn cũng sẽ gặp lỗi. Ví dụ:
+    ``` typescript
+        const student = {“name”: “alex”, “age”: 20}
+        student = {“name”: “Nagi”, “age”: 18} // lỗi
+    ```
+    Tuy nhiên, nếu bạn chỉ thay đổi các thuộc tính của object thì hoàn toàn hợp lệ. Ví dụ mình sẽ
+    chỉ thay giá trị của name trong object student:
+    ``` typescript
+    const student = {“name”: “alex”, “age”: 20}
+    student.name = “Nagi”; // Hợp lệ
+    ```
+- **Để thêm thuộc tính mới vào object**, chúng ta chỉ cần dùng dấu . hoặc ngoặc vuông [] để định
+nghĩa thuộc tính mới. Ví dụ:
+    ``` typescript
     let bike = {
         make: 'Yamaha',
         model: 'YZF-R3'
@@ -98,8 +103,31 @@ Ví dụ:
     bike[“price new”] = 100;
     console.log(bike);
     {make: 'Yamaha', model: 'YZF-R3', color: 'Blue', ‘price new’ : 100}
+    ```
+- **Để xóa thuộc tính của object**, chúng ta dùng hàm delete:
+    ``` typescript
+    let employee = {
+    name: 'Le Van C',
+    age: 30,
+    department: 'HR'
+    };
 
+    delete employee.age;
+    console.log(employee);
+    Kết quả:
+    {name: 'Le Van C', department: 'HR'} 
+    ```   
 ### Logical operator
     - `&&`: cả 2 vế mệnh đề đều đúng
     - `||`: 1 trong 2 vế mệnh đều đúng
     - `!`: đảo ngược value, example: !a, !!b
+### Loops
+**Để thêm phần tử vào mảng**, ta dùng hàm *push*
+Ví dụ:
+```typescript
+const arr = [1,2];
+arr.push(3);
+console.log(arr);
+// Kết quả in ra
+[1, 2, 3]
+```
