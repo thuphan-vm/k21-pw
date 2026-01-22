@@ -4,13 +4,17 @@
 
 - `Ctrl C`: hủy lệnh trong Visual Studio
 - Gõ `q` de thoat khoi giao dien git log
+- type `clear`: to clear old log in Git Bash mode
+
 
 - **Excalidraw** dùng để vẽ trong lúc present
 
 - `git config --global --unset user.name`: gỡ user name
 - `git config --global --unset user.email`: gỡ emails
 
--  `git log` -> check username, email, commit date + message 
+-  `git log` -> check danh sách commit: check username, email, commit date + message 
+
+- `git status`: check files in staging, working directory. Not show files, ff files are commited (Repository area)
 
 - `touch fileName.txt` -> create file in cmd git/ terminal
 

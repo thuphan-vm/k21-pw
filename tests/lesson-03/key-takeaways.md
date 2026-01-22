@@ -3,24 +3,66 @@
 ## Git
 ### Undo actions
 - Change commit message:
-`git commit --amend "new message"`   
-- Transfer file(s) from staging area to working directory area : 
-`git restore --staged <file>`
-- Transfer file(s) from repository area to working directory area (uncommit)
-`git reset HEAD~1` (undo 1 commit)
+    - 1st way: `git commit --amend "new message"`        
+    - 2nd way: `git commit --amend`
+        - Type "i": to open insert mode
+        - Type "esc": to exit insert mode
+        - Type ":wq": write and quit
+        - Type ":q": quit
+
+- `git restore --staged <file>`
+Transfer file(s) from staging area to working directory area : 
+
+
+### Un-commit
+- `git reset HEAD~N` (undo N commit) N = 1, 2, 3,...
+Transfer file(s) from repository area to working directory area (uncommit)
 - Commit đầu tiên không thể bị reset.
 - Nếu muốn reset → xoá thư mục *.git* đi rồi *init* lại
+- `git log` -> check danh sách commit
+- `git status`: kiểm tra trạng thái files
+
+### Pull code
+`git pull origin main` lấy code từ server về
 
 ### Branching model
+- Git sử dụng nhánh (branch) để tạo ra các “phiên bản” riêng của code,
+tránh ảnh hưởng tới “bản gốc”
+- Khi khởi tạo repo (git init), nhánh mặc định sẽ được tạo ra
+- `git config --global init.defaultBranch main`
+    > cấu hình: khi khởi tạo, đặt nhánh mặc định là nhánh main
+- `giit branch`: show branch list
+    > Cần có ít nhất 1 commit mới hiện danh sách nhánh
+- `git branch <branch name>` : tạo branch mới   
+    > Nhánh mới “copy” giống hệt nhánh hiện tại
+- `git checkout <branch_name>`: switch branch
+- `git checkout -b <name>`: Vừa tạo, vừa chuyển sang nhánh mới
+- `git branch -D <branch name>`: delete branch
+    > đứng ở nhánh khác trước khi xoá
+- Luôn pull code về trước khi tạo nhánh mới
 ### Ignore file
+- `.gitignore` = Git Ignore: Dùng để bỏ qua các file không cần git theo dõi.
+    - Ignore file:
+        `<file_name>`
+    - Ignore folder:
+        `<folder-name>/`
+- Trong dự án thường có nhiều file không cần thiết phải đưa vào Git repository, ví dụ:
+    - File tạm thời của hệ điều hành (.DS_Store, Thumbs.db) 
+    - Thư mục dependencies (node_modules/, vendor/) 
+    - File build và artifacts (dist/,build/, *.exe)
+    - File cấu hình cá nhân (IDE settings, environment variables)
+    - File nhạy cảm (API keys, passwords, certificates)
+    - File log và database local
+### Revision (commit hash)
+![alt text](revision.png)
 
 ## Javascript
-
 ### Convention
 - snake_case_name : tạm thời không dùng
 - kebab-case-name : đặt tên file và folder
 - camelCaseName : đặt tên biến, hàm
 - PascalCaseName : đặt tên class
+
 ### console.log
 > giúp debug và theo dõi code
 ```typescript
@@ -121,8 +163,12 @@ nghĩa thuộc tính mới. Ví dụ:
     - `&&`: cả 2 vế mệnh đề đều đúng
     - `||`: 1 trong 2 vế mệnh đều đúng
     - `!`: đảo ngược value, example: !a, !!b
-### Loops
-**Để thêm phần tử vào mảng**, ta dùng hàm *push*
+
+### Array
+- Khai báo: a = [1, 2, 'a', false, true]
+- Độ dài mảng: `a.length`
+- Lấy phần tử theo index: `a[0]`, `a[1]`
+- **Để thêm phần tử vào mảng**, ta dùng hàm `push`
 Ví dụ:
 ```typescript
 const arr = [1,2];
@@ -130,4 +176,19 @@ arr.push(3);
 console.log(arr);
 // Kết quả in ra
 [1, 2, 3]
+```
+### Function
+- Function = hàm: là 1 đoạn code được đặt tên, có thể tái sử dụng, thực hiện 1 phép tính hoặc nhiệm vụ cụ thể
+- Khai báo:
+```typescript
+function <nameFunction>() {
+    // code
+}
+```
+- Parameter: `nameFunction(para1, para2)`
+- Return value: 
+```typescript
+function ABC() {
+    return 10
+} 
 ```

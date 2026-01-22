@@ -19,9 +19,7 @@ for (let i = 2; i <= 9; i++) {
 /* 3. Tạo một mảng chứa các số lẻ từ 1 đến 99. */
 const oddNum = [];
 for (let i = 1; i <= 99; i += 2) {
-    if (i % 2 != 0) {
-        oddNum.push(i)
-    }
+    oddNum.push(i)
 }
 console.log(oddNum);
 
@@ -34,7 +32,7 @@ for (let i = 1; i <= 10; i++) {
 /* 5. Tính tổng doanh thu của 12 tháng trong năm dựa trên mảng doanh thu đã cho 
 và in ra tổng doanh thu. Biết cấu trúc object của mảng doanh thu như sau:
 {“month”: 2, “total”: 100} */
-arrayIncome = [
+const arrayIncome = [
     { "month": 1, "total": 100 },
     { "month": 2, "total": 200 },
     { "month": 3, "total": 300 },
@@ -51,8 +49,8 @@ arrayIncome = [
 
 function totalIncome(arr) {
     let totalIncome = 0;
-    for (let i=0; i< arrayIncome.length; i++) {
-        totalIncome += arrayIncome[i].total
+    for (let i = 0; i < arr.length; i++) {
+        totalIncome += arr[i].total
     }
     return totalIncome;
 }
