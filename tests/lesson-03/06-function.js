@@ -10,11 +10,11 @@ multiply(9, 10);
 Gọi hàm và in kết quả với 2 bộ số khác nhau. */
 function findMin(a, b, c) {
     let min = a;
-    if (a > b) {
+    if (min > b) {
         min = b;
-        if (b > c) {
-            min = c;
-        }
+    }
+    if (min > c) {
+        min = c;
     }
     console.log('Min number', min)
 }
@@ -29,8 +29,8 @@ Hàm trả về mảng mới chứa tên của những học sinh có điểm >=
 Gọi hàm với danh sách thực tế và in kết quả. */
 function getTopStudents(students, threshold) {
     const topStudents = [];
-    for(let i=0; i < students.length; i++) {
-        if(students[i].score >= threshold) {
+    for (let i = 0; i < students.length; i++) {
+        if (students[i].score >= threshold) {
             topStudents.push(students[i].name);
         }
     }
