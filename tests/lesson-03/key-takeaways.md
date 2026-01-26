@@ -192,3 +192,12 @@ function ABC() {
     return 10
 } 
 ```
+
+### Loop
+- Vòng lặp lồng nhau là khi bạn đặt một vòng lặp bên trong một vòng lặp khác. Điều quan trọng cần hiểu:
+**mỗi lần vòng lặp ngoài chạy 1 lần, vòng lặp trong phải chạy HẾT tất cả các lần của nó.**
+- Điểm quan trọng cần nhớ: 
+    1. Vòng trong reset mỗi lần: Vòng lặp trong luôn bắt đầu lại từ giá trị khởi tạo mỗi khi vòng ngoài chạy
+    2. Số lần thực thi: Vòng ngoài chạy n lần, vòng trong chạy m lần → Tổng = n × m lần
+    3. Thứ tự thực thi: Luôn là vòng trong chạy hết trước, rồi vòng ngoài mới tiếp tục
+    4. Biến độc lập: Mỗi vòng lặp cần biến riêng (i, j, k,...)
