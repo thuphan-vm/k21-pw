@@ -23,6 +23,12 @@
 - **chuyển path / thành \ **
     > *File -> Preference* -> gõ copy -> "auto" chuyển thành \ (2 chỗ auto)
 
+- Đổi terminal mặc định trong VS Code: 
+    1. Ctrl + Shift + P
+    2. Tìm kiếm: terminal default
+    3. Chọn: `Terminal: Select Default Profile`
+    4. Chọn `Git Bash`
+    5. Kiểm tra lại bằng cách mở terminal (Ctrl Shift `) -> ra Git Bash là đúng
 
 - forward slash /
 - back slash \
