@@ -45,7 +45,11 @@
 
 ## VS Code = IDE = integrated development enviroment
 > là công cụ để viết code
-- Cài đặt thêm extension: Playwright
+- Cài đặt thêm **extension**: `Playwright` -> xuất hiện hình phễu thí nghiệm bên góc trái màn hình -> kéo tab Playwright mở rộng (kéo từ dưới lên trên) -> **Projects**: chỉ tick `chromium` ->  **Settings:** chỉ tick `Show browser`
+
+![playright_Extension](playright_Extension.png)
+
+
 ### Đổi terminal mặc định
 > Window Powershell là terminal mặc định trên Windows, hay bị chặn/ lỗi lặt vặt
 -> dùng Git Bash để tránh lỗi
