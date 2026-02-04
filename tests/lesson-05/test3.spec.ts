@@ -21,7 +21,7 @@ test('Excercise 3: Todo Page', async ({ page }) => {
     });
 
     // Handle Add 100 todo items with format "Todo <i>"
-    await test.step('Click on Bài học 3: Todo page', async () => {
+    await test.step('Add 100 items', async () => {
         // get input new-task XPath
         const inputNewTask = await page.locator("//input[@id='new-task']");
         // get button add XPath
@@ -32,7 +32,7 @@ test('Excercise 3: Todo Page', async ({ page }) => {
             await inputNewTask.fill(`Todo <${i}>`);
             await btnAdd.click();
         }
-        await page.waitForTimeout(5000);
+        await page.waitForTimeout(3000); // pause within 3 seconds
     });
 
     // Delete odd items
