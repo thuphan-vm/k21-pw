@@ -16,7 +16,7 @@ test('Excercise 2: Product Page', async ({ page }) => {
         // click to the link
         await page.getByRole('link', { name: 'Bài học 2: Product page' }).click();
 
-        // Expects page to have a heading with the name of User Registration.
+        // Expects page to have a heading with the name of Simple E-commerce
         await expect(page.getByRole('heading', { name: 'Simple E-commerce' })).toBeVisible(); // heading = find any tag <h1>, <h2>, ...
     });
 
