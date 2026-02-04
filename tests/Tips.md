@@ -5,7 +5,9 @@
 - `Ctrl C`: hủy lệnh trong Visual Studio
 - Gõ `q` de thoat khoi giao dien git log
 - type `clear`: to clear old log in Git Bash mode
-
+- gõ `mkdir <ten_folder`: create folder
+- `cd <folderName/path>`: move to folder/path
+- `code .`: mở VS Code 
 
 - **Excalidraw** dùng để vẽ trong lúc present
 
@@ -76,6 +78,7 @@ PI2 = 3.15 // no error
 - Mac: Cmd  + /
 #### Format code: 
 - `Alt Shift F`
+
 
 
 
