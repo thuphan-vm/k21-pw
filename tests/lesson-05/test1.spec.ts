@@ -71,16 +71,20 @@ test('Excercise 1: Register Page', async ({ page }) => {
         await page.locator("//input[@id='favcolor']").fill('#2b00ff');
 
         //Hover
-        await page.locator("//div[text()='Hover over me']").hover();
+        await page.locator("//div[contains(text(), 'Hover over me')]").hover();
+        await page.waitForTimeout(3000);
 
         // checkbox: Newsletter
         await page.locator("//input[@id='newsletter']").check();
 
-        // 
+        // span: Enable Feature
+        await page.locator("//span[@class='slider round']").click();
+    });
 
-
-    })
-
-
-
+    await test.step('Click button Register', async () => {
+        // click button Register
+        await page.locator("//button[text() = 'Register']").click({
+            delay: 2_000
+        });
+    });
 });
