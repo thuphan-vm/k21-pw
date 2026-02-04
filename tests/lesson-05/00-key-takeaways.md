@@ -419,7 +419,7 @@ await expect(countrySelect).toHaveValue("USA");
 
 
 // select multiple options
-await languageSelect.selectOption("vi", "en", "jp");
+await languageSelect.selectOption(["vi", "en", "jp"]);
 ```
 
 ### **DataList**
